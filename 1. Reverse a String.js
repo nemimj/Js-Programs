@@ -1,5 +1,8 @@
 // Reverse a String  (ex: hello -->  olleh)
 
-function reverseString(str) {}
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
 
-rev;
+const revStr = reverseString("hello");
+console.log(revStr);
