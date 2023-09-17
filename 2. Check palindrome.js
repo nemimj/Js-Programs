@@ -2,11 +2,7 @@
 
 function isPalindrome(str) {
   const revStr = str.split("").reverse().join("");
-  for (let i = 0; i <= revStr.length; i++) {
-    if (str[i] !== revStr[i]) return false;
-  }
-
-  return true;
+  return revStr === str;
 }
 
 console.log(isPalindrome("rotor"));
